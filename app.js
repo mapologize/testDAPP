@@ -9,6 +9,10 @@ app.get('/',(req, res, next) => {
     res.json({ msg: "cors api get done!"});
 });
 
+app.get('/about',(req, res, next) => {
+    res.json({ msg: "about page!"});
+});
+
 app.listen(port,() => {
     console.log('cors webserver listening port : '+port);
 });
